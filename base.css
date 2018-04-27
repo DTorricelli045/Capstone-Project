@@ -1,0 +1,92 @@
+/*logo*/
+header img#logo {
+  width: 300px;
+  height: 150px;
+}
+
+/*base styles*/
+
+figure#slide > img {
+  width: 100%;
+  height: 400px;
+}
+
+figure {
+  width: 1100px;
+  margin-left: 0px;
+  margin-top: 0px;
+  height: 400px;
+}
+
+html {
+   background: white;
+   height: 1000px;
+}
+
+body {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+   margin: 0px auto;
+   min-width: 320px;
+   max-width: 1100px;
+   padding: 10px;
+   width: 100%;
+}
+
+/* Header styles */
+
+body > header {
+   color: white;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+   -webkit-align-items: flex-end;
+   align-items: flex-end;
+   width: 100%;
+   background: linear-gradient(to top left, rgb(241, 239, 239), white);
+}
+
+body > header > img {
+   display: block;
+   -webkit-flex: 0 1 200px;
+   flex: 0 1 200px;
+}
+
+
+/* Nav styles */
+
+body > header > nav {
+   -webkit-flex: 1 1 441px;
+   flex: 1 1 441px;
+}
+
+body > header > nav > ul {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row nowrap;
+   flex-flow: row nowrap;
+   -webkit-justify-content: flex-end;
+   justify-content: flex-end;
+}
+
+body > header > nav > ul li {
+   -webkit-flex: 0 1 auto;
+   flex: 0 1 auto;
+}
+
+body > header > nav > ul > li {
+   font-size: 1.2em;
+   line-height: 2.3em;
+   height: 2.3em;
+   padding: 0px 10px;
+   text-decoration: none;
+}
+
+body > header > nav > ul > a {
+   display: block;
+   width: 100%;
+   border: 2px solid red;
+}
