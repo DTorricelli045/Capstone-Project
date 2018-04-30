@@ -1,10 +1,6 @@
 /* index.css */
 
-p {
-  font-family: 'Quicksand', sans-serif;
-  letter-spacing: 0.5px;
-  height: 50px;
-}
+
 
 h2 {
   font-size: 2em;
@@ -22,10 +18,19 @@ figure#slide > img {
   padding-bottom: 50px;
 }
 
-/*This makes thge figure of the slide show portion of the index the size that it is*/
+/*This makes the figure of the slide show portion of the index the size that it is*/
 figure {
   width: 1080px;
   margin-left: 0px;
   margin-top: 0px;
   height: 500px;
+}
+
+/* this will set the Background colors */
+body {
+  background-color: white; 
+}
+
+section {
+  padding: 0px 30px;
 }
