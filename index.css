@@ -20,7 +20,7 @@ figure#slide > img {
 
 /*This makes the figure of the slide show portion of the index the size that it is*/
 figure {
-  width: 1080px;
+  width: 100%;
   margin-left: 0px;
   margin-top: 0px;
   height: 500px;
