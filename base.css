@@ -90,3 +90,16 @@ body > header > nav > ul > a {
    width: 100%;
    border: 2px solid red;
 }
+
+
+/* footer styles */
+footer {
+  margin-top: 25px;
+  padding: 10px 0;
+  width: 100%;
+  background: linear-gradient(to top left, rgb(241, 239, 239), white);
+}
+
+footer p {
+  text-align: center;
+}
