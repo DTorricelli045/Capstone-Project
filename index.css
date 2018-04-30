@@ -1,1 +1,31 @@
 /* index.css */
+
+p {
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 0.5px;
+  height: 50px;
+}
+
+h2 {
+  font-size: 2em;
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 2px;
+  width: 500px;
+  height: 50px;
+}
+
+
+/*This makes the images in the figure the size that they are appearing on the page*/
+figure#slide > img {
+  width: 100%;
+  height: 500px;
+  padding-bottom: 50px;
+}
+
+/*This makes thge figure of the slide show portion of the index the size that it is*/
+figure {
+  width: 1080px;
+  margin-left: 0px;
+  margin-top: 0px;
+  height: 500px;
+}
