@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <title>World Wide Widget</title>
 </head>
 
@@ -15,12 +17,12 @@
   <header>
     <!-- the header holds our logo set to the left side of the page, while our navbar occupies the empty space beside it on the right -->
     <img id=logo src="pics/logo.png" alt="World Wide Widget">
-    <nav>
+    <nav id="nav">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="Contact.html">Contact Us</a></li>
-        <li><a href="product.html">Products/Services</a></li>
+        <a class="home" href="#"><li>Home</li></a>
+        <a class="about" href="#"><li>About Us</li></a>
+        <a class="contact" href="#"><li>Contact Us</li></a>
+        <a class="products" href="#"><li>Products</li></a>
       </ul>
     </nav>
   </header>
@@ -28,7 +30,7 @@
    <article>
        <!-- This article holds a slideshow for our images to cycle through -->
        <figure id="slide">
-           <img width="160" height="280">
+           <img src="pics/handShake.jpg" alt="handshake" width="160" height="280">
        </figure>
     </article>
 
