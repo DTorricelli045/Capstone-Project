@@ -15,40 +15,13 @@ h2 {
 }
 
 .slideshow-container {
-  max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
-/* by default, DO NIT display slide images */
+/* by default, DO N)T display slide images */
 .slide {
   display: none;
-}
-
-/* slide buttons */
-.last, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* position next button */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* add fancy styles to buttons */
-.last:hover, .next:hover {
-  background-color: rgba(48, 205, 105, 0.80);
 }
 
 div#text {
@@ -70,22 +43,6 @@ div#text {
   top: 0;
 }
 
-/* Slide dots */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -104,6 +61,13 @@ div#text {
   to {opacity: 1}
 }
 
+div img {
+  width: 100%;
+}
+
+article {
+  width: 100%;
+}
 
 
 /* this will set the Background colors */
@@ -113,4 +77,19 @@ body {
 
 section {
   padding: 0px 30px;
+}
+
+/* scrolling styles */
+.parallax {
+  /* The image used */
+  background-image: url("pics/slide.jpg");
+
+  /* Set a specific height */
+  min-height: 360px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
