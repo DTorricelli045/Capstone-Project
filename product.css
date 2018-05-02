@@ -1,0 +1,10 @@
+/*products.css*/
+
+p.h2 {
+  font-size: 2em;
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 2px;
+  width: 100%;
+  height: 50px;
+  margin-top: 50px;
+}

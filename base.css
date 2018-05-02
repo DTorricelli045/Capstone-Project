@@ -2,8 +2,9 @@
 
 /*This makes the logo the size that it is in the header*/
 header img#logo {
-  width: 300px;
-  height: 150px;
+  width: 200px;
+  height: 100px;
+  margin-left: 50px;
 }
 
 /*base styles*/
@@ -12,7 +13,6 @@ header img#logo {
 html {
    background-color: white;
    background-image: url(https://images.unsplash.com/photo-1518406002662-edf7ea6c3b41?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7268c4cb29ad0f261fadcda3180e7c01&auto=format&fit=crop&w=800&q=60);
-   /* !*!*!*!*!*!*!*!*!*!*!*!*!*!background image????????????????????????????????? */
    height: 100%;
    background-repeat: no-repeat;
    background-size: cover;
@@ -21,9 +21,7 @@ html {
 }
 
 body {
-   display: -webkit-flex;
    display: flex;
-   -webkit-flex-flow: row wrap;
    flex-flow: row wrap;
    margin: 0px auto;
    min-width: 320px;
@@ -42,15 +40,13 @@ p {
 /* Header styles */
 
 body > header {
-   color: white;
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-flow: row wrap;
-   flex-flow: row wrap;
-   -webkit-align-items: flex-end;
-   align-items: flex-end;
-   width: 100%;
-   background: linear-gradient(to top left, rgb(241, 239, 239), white);
+  color: white;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  width: 100%;
+  background: linear-gradient(to top left, rgb(241, 239, 239), white);
 }
 
 body > header > img {
@@ -75,7 +71,8 @@ body > header > nav > ul {
    flex-flow: row nowrap;
    -webkit-justify-content: flex-end;
    justify-content: flex-end;
-   padding-right: 60px;
+   padding-right: 40px;
+   padding-bottom: 5px;
 }
 
 body > header > li {
@@ -104,10 +101,9 @@ a:hover {
 
 /* footer styles */
 footer {
-  margin-top: 25px;
   padding: 20px 0px 0px 0px;
   width: 100%;
-  background: linear-gradient(to top left, rgb(241, 239, 239), white);
+  background: linear-gradient(to bottom left, rgb(241, 239, 239), white);
 }
 
 footer p {
