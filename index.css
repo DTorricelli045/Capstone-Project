@@ -9,6 +9,7 @@ h2 {
 }
 
 
+
 /*This will be the styles for our slideshow*/
 .slideShow {
   box-sizing: border-box;
@@ -52,12 +53,12 @@ div#text {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .7} 
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .7} 
   to {opacity: 1}
 }
 
@@ -71,9 +72,6 @@ article {
 
 
 /* this will set the Background colors */
-body {
-  background-color: white; 
-}
 
 section {
   padding: 0px 30px;
