@@ -11,9 +11,9 @@ header img#logo {
 
 /*This makes thge html document a background of white with the height of 100%.*/
 html {
-   background-color: white;
-   background-image: url(https://images.unsplash.com/photo-1518406002662-edf7ea6c3b41?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7268c4cb29ad0f261fadcda3180e7c01&auto=format&fit=crop&w=800&q=60);
-   height: 100%;
+  background-image: url(https://cdn.pixabay.com/photo/2017/06/21/07/33/background-2426329_960_720.jpg);
+   /* background-image: url(https://images.unsplash.com/photo-1518406002662-edf7ea6c3b41?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7268c4cb29ad0f261fadcda3180e7c01&auto=format&fit=crop&w=800&q=60);
+   height: 100%; */
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
@@ -96,7 +96,7 @@ body > header > nav > ul > a {
 }
 
 a:hover {
-  color: rgb(51, 205, 107);
+  color: rgba(51, 205, 107, 0.63);
 }
 
 
@@ -109,5 +109,14 @@ footer {
 
 footer p {
   text-align: center;
-  height: 40px;
+  height: 30px;
+}
+
+footer img {
+  height: 80px;
+  width: 100px;
+}
+
+img.fb {
+  margin-left: 390px;
 }
