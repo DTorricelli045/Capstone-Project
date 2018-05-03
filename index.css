@@ -78,18 +78,3 @@ body {
 section {
   padding: 0px 30px;
 }
-
-/* scrolling styles */
-.parallax {
-  /* The image used */
-  background-image: url("pics/slide.jpg");
-
-  /* Set a specific height */
-  min-height: 360px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
