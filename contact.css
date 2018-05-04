@@ -1,1 +1,33 @@
 /* contact.css */
+
+
+
+/* Positioning styles */
+
+/* LOOK UP https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+AND https://www.w3schools.com/css/css3_flexbox.asp to make an application sheet that folds out into a tray */
+
+section #main {
+    display: flex;
+    width: 100%;
+}
+
+section #forms {
+    display: flex;
+    width: 100%;
+    border: 5px solid red;
+}
+
+#app {
+    display: flex;
+    width: 50%;
+    border: 2px solid blue;
+    float: left;
+}
+
+#appdock {
+    display: flex;
+    width: 50%;
+    border: 2px solid green;
+    float: right;
+}

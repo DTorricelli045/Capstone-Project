@@ -28,7 +28,7 @@ h2 {
   margin: auto;
 }
 
-/* by default, DO N)T display slide images */
+/* by default, DO NOT display slide images */
 .slide {
   display: none;
 }
