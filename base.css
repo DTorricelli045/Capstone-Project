@@ -27,6 +27,7 @@ body {
    min-width: 320px;
    max-width: 1100px;
    width: 100%;
+   min-width: 925px;
    background-color: rgba(255, 255, 255, 0.78);
 }
 
@@ -98,7 +99,6 @@ body > header > nav > ul > a {
 a:hover {
   color: rgba(51, 205, 107, 0.63);
 }
-
 
 /* footer styles */
 footer {
