@@ -1,17 +1,19 @@
 /* index.css */
 
 h2 {
-  font-size: 2em;
+  font-size: 1.8em;
   font-family: 'Fjalla One', sans-serif;
   letter-spacing: 2px;
   width: 500px;
   height: 60px;
-  background-color: rgba(110, 198, 231, 0.39);
+  background-color: rgba(110, 198, 231, 0.62);
   border-top-right-radius: 1000px;
   border-bottom-right-radius: 1000px;
   padding-top: 20px;
   margin-bottom: 10px;
   padding-left: 20px;
+  color: white;
+  text-shadow: 2px 2px 8px rgb(142, 206, 247);
 }
 
 
@@ -59,12 +61,12 @@ div#text {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .7} 
+  from {opacity: .7}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .7} 
+  from {opacity: .7}
   to {opacity: 1}
 }
 
@@ -76,9 +78,14 @@ article {
   width: 100%;
 }
 
-
-/* this will set the Background colors */
-
-section {
-  padding: 0px 30px;
+section p {
+  border: 20px solid rgba(93, 227, 92, 0.34);
+  background-color: white;
+  height: 200px;
+  width: 900px;
+  margin-left: 95px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
+/* this will set the Background colors */
