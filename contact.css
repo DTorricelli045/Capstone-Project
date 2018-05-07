@@ -7,6 +7,54 @@
 /* LOOK UP https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 AND https://www.w3schools.com/css/css3_flexbox.asp to make an application sheet that folds out into a tray */
 
+* {
+    box-sizing: border-box;
+}
+
+
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row, .navbar {   
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
 section #main {
     display: flex;
     width: 100%;
