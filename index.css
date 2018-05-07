@@ -91,5 +91,7 @@ section p {
   padding-top: 20px;
   padding-right: 20px;
   text-align: center;
+  font-size: 1.3em;
+  line-height: 30px;
 }
 /* this will set the Background colors */
