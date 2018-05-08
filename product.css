@@ -1,5 +1,9 @@
 /*products.css*/
 
+body {
+  display: flex;
+}
+
 h2 {
   font-size: 2em;
   font-family: 'Fjalla One', sans-serif;

@@ -26,56 +26,62 @@ AND https://www.w3schools.com/css/css3_flexbox.asp to make an application sheet 
     padding: 20px;
 }
 
-/* Main column */
+/* application tray */
 .main {
     flex: 70%;
     background-color: white;
     padding: 20px;
 }
 
-/* Fake image, just for this example */
-.fakeimg {
-    background-color: #aaa;
-    width: 100%;
+/* buttons */
+.appHide {
+    background-color: green;
+    width: 90%;
     padding: 20px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
+
+.appHide:focus {
+    outline: 0;
+}
+
+.appHide:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    background: rgb(60, 187, 39);
+    transition: 0.6s;
+}
+
+.active {
+    width: 110%;
+    background: rgb(60, 187, 39);
+}
+
+/* hide/unhide elements */
+.app {
+display: none;
+width: 100%;
+padding: 50px 0;
+text-align: center;
+background-color: lightblue;
+margin-top: 20px;
+}
+
+.app > .active {
+    display: block;
+}
+
+
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
     .row, .navbar {   
         flex-direction: column;
     }
-}
-
-
-
-
-
-
-
-
-
-section #main {
-    display: flex;
-    width: 100%;
-}
-
-section #forms {
-    display: flex;
-    width: 100%;
-    border: 5px solid red;
-}
-
-#app {
-    display: flex;
-    width: 50%;
-    border: 2px solid blue;
-    float: left;
-}
-
-#appdock {
-    display: flex;
-    width: 50%;
-    border: 2px solid green;
-    float: right;
 }

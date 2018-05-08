@@ -21,7 +21,6 @@ html {
 }
 
 body {
-   display: flex;
    flex-flow: row wrap;
    margin: 0px auto;
    min-width: 320px;

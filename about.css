@@ -1,5 +1,9 @@
 /* about.css */
 
+body {
+  display: flex;
+}
+
 aside h2{
   font-size: 2em;
   font-family: 'Fjalla One', sans-serif;
