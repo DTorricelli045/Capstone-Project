@@ -1,3 +1,7 @@
+/*base.css*/
+
+/*========================*/
+
 /*logo*/
 
 /*This makes the logo the size that it is in the header*/
@@ -7,40 +11,47 @@ header img#logo {
   margin-left: 50px;
 }
 
-/*base styles*/
+/*=============================*/
+
+/*html styles*/
 
 /*This makes thge html document a background of white with the height of 100%.*/
 html {
   background-image: url(https://cdn.pixabay.com/photo/2017/06/21/07/33/background-2426329_960_720.jpg);
-   /* background-image: url(https://images.unsplash.com/photo-1518406002662-edf7ea6c3b41?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7268c4cb29ad0f261fadcda3180e7c01&auto=format&fit=crop&w=800&q=60);
-   height: 100%; */
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
+
+/*===========================*/
+
+/*body styles*/
 
 body {
-   display: flex;
-   flex-flow: row wrap;
-   margin: 0px auto;
-   min-width: 320px;
-   max-width: 1100px;
-   width: 100%;
-   min-width: 925px;
-   background-color: rgba(255, 255, 255, 0.78);
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0px auto;
+  min-width: 320px;
+  max-width: 1100px;
+  width: 100%;
+  min-width: 925px;
+  background-color: rgba(255, 255, 255, 0.78);
 }
 
-/* Fonts and text styles */
+/* Fonts*/
+
 p {
   font-family: 'Quicksand', sans-serif;
   letter-spacing: 0.5px;
   height: 50px;
 }
 
+/*============================*/
+
 /* Header styles */
 
-body > header {
+body>header {
   color: white;
   display: -webkit-flex;
   display: flex;
@@ -50,57 +61,61 @@ body > header {
   background: linear-gradient(to top left, rgb(241, 239, 239), white);
 }
 
-body > header > img {
-   display: block;
-   -webkit-flex: 0 1 200px;
-   flex: 0 1 200px;
+body>header>img {
+  display: block;
+  -webkit-flex: 0 1 200px;
+  flex: 0 1 200px;
 }
 
+/*=========================
 
 /* Nav styles */
 
-body > header > nav {
-   -webkit-flex: 1 1 441px;
-   flex: 1 1 441px;
-   margin-right: 25px;
+body>header>nav {
+  -webkit-flex: 1 1 441px;
+  flex: 1 1 441px;
+  margin-right: 25px;
 }
 
-body > header > nav > ul {
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-flow: row nowrap;
-   flex-flow: row nowrap;
-   -webkit-justify-content: flex-end;
-   justify-content: flex-end;
-   padding-right: 40px;
-   padding-bottom: 5px;
+body>header>nav>ul {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  padding-right: 40px;
+  padding-bottom: 5px;
 }
 
-body > header > li {
-   -webkit-flex: 0 1 auto;
-   flex: 0 1 auto;
+body>header>li {
+  -webkit-flex: 0 1 auto;
+  flex: 0 1 auto;
 }
 
-body > header > nav > ul > a {
-   display: block;
-   width: 130px;
-   color: black;
-   font-size: 1.2em;
-   line-height: 2.3em;
-   height: 2.3em;
-   font-family: 'Fjalla One', sans-serif;
-   letter-spacing: 2px;
-   margin-bottom: 10px;
-   text-align: center;
-   padding-right: 5px;
-   transition: color 0.6s;
+body>header>nav>ul>a {
+  display: block;
+  width: 130px;
+  color: black;
+  font-size: 1.2em;
+  line-height: 2.3em;
+  height: 2.3em;
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-right: 5px;
+  transition: color 0.6s;
 }
 
 a:hover {
   color: rgba(51, 205, 107, 0.63);
 }
 
+/*==============================*/
+
 /* footer styles */
+
 footer {
   padding: 20px 0px 0px 0px;
   width: 100%;
