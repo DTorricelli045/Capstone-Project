@@ -35,14 +35,15 @@
     </nav>
   </header>
 
-      <section id="main">
+
+
+      <section class="main">
           <div>
             <h2>Have Any Questions?</h2>
             <h3>Contact Us!</h3>
           </div>
       </section>
-      
-
+    
 
    <section id="forms">
 
@@ -50,42 +51,28 @@
     <div class="side">
       <h2>About Me</h2>
       <h5>Photo of me:</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
+      <div class="img" style="height:200px;">Image</div>
       <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      <h3>More Text</h3>
-      <p>Lorem ipsum dolor sit ame.</p>
-      <div class="fakeimg" style="height:60px;">Image</div><br>
-      <div class="fakeimg" style="height:60px;">Image</div><br>
-      <div class="fakeimg" style="height:60px;">Image</div>
+      <h3>Available Applications</h3>
+    <div id="buttons">
+      <button class="appHide active" onclick="apply()">show app 1<br>
+      <button class="appHide" onclick="apply()">show app 2<br>
+      <button class="appHide" onclick="apply()">show app 3</div>
     </div>
 
     <div class="main">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      <br>
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <h2>Select an application</h2>
+      <p>Application details go here</p>
+      <p>(They're over There) <br><<< </p>
+
+    <div id="applications">
+      <div class="app active">Success???</div><br>
+      <div class="app">Success???</div><br>
+      <div class="app">Success???</div>
+    </div>
+
   </div>
 </div>
-
-
-
-
-    <div id="app">
-    <!-- this section holds our different applications that are possible to be applied for, it is set to the left under the contact info section above -->
-    <p>contact info</p>
-    </div>
-
-    <div id="appDock">
-      <p>Test text, apllication details go here<p>
-    </div>
-
    </section>
 
   
@@ -96,7 +83,9 @@
     <a href="https://www.facebook.com/"><img class="fb"src="pics/facebook.png" alt=""></a>
     <a href="https://www.instagram.com/?hl=en"><img class="in"src="pics/instagram.png" alt=""></a>
     <a href="https://twitter.com/?request_context=signup"><img class="tw"src="pics/twitter.png" alt=""></a>
-  </footer>
+    </footer>
+
+    <script src="application.js"></script>
 </body>
 
 </html>
