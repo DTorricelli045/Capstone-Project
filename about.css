@@ -2,6 +2,12 @@
 
 /*========================*/
 
+
+body {
+  display: flex;
+}
+
+
 /*aside styles*/
 
 aside {
