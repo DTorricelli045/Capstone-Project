@@ -18,7 +18,7 @@ header img#logo {
 /*This makes thge html document a background of white with the height of 100%.*/
 html {
   /* background image styles */
-  background-image: url(https://cdn.pixabay.com/photo/2017/06/21/07/33/background-2426329_960_720.jpg);
+  background-image: url(pics/wallpaper.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
