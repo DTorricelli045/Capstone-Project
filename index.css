@@ -85,7 +85,7 @@ div#text {
   }
 }
 
-div img {
+div.mySlide img {
   width: 100%;
   height: 650px;
 }

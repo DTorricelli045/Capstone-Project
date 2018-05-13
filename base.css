@@ -17,6 +17,7 @@ header img#logo {
 
 /*This makes thge html document a background of white with the height of 100%.*/
 html {
+  /* background image styles */
   background-image: url(https://cdn.pixabay.com/photo/2017/06/21/07/33/background-2426329_960_720.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -122,15 +123,18 @@ footer {
 }
 
 footer p {
+  display: flex;
+  justify-content: center;
   text-align: center;
   height: 30px;
+}
+
+.footImg {
+  display: flex;
+  justify-content: center;
 }
 
 footer img {
   height: 80px;
   width: 100px;
-}
-
-img.fb {
-  margin-left: 390px;
 }
