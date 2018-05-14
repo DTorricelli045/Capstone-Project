@@ -16,6 +16,7 @@ aside {
   border-radius: 25px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
+  height: 1100px;
 }
 /*This makes the aside a width of 30% of te screen with a background of white.
 The border radius makes the border rounded in the desired corners of the border */
@@ -30,8 +31,50 @@ aside p {
   font-size: 0.9em;
   color: white;
   text-shadow: 2px 2px 8px #80e67e;
-  ;
 }
+
+aside p.answer1 {
+  float: left;
+  background-color: rgba(93, 227, 92, 0.54);
+  border-radius: 15px;
+  margin: 15px;
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 0.9em;
+  color: white;
+  text-shadow: 2px 2px 8px #80e67e;
+  height: 230px;
+  margin-top: 30px;
+}
+
+aside p.answer2 {
+  float: left;
+  background-color: rgba(93, 227, 92, 0.54);
+  border-radius: 15px;
+  margin: 15px;
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 0.9em;
+  color: white;
+  text-shadow: 2px 2px 8px #80e67e;
+  height: 170px;
+  margin-top: 30px;
+}
+
+aside p.answer3 {
+  float: left;
+  background-color: rgba(93, 227, 92, 0.54);
+  border-radius: 15px;
+  margin: 15px;
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 0.9em;
+  color: white;
+  text-shadow: 2px 2px 8px #80e67e;
+  height: 190px;
+  margin-top: 30px;
+}
+
 /*The paragraph elements of the aside element will float over to the left that
 will have a background color of green. The border will be rounded and also the margins and paddings make it so that each paragraph is spaced out from the others. The color of the font
 will be white with a text shadow of a darker green to make the words pop.*/
@@ -89,6 +132,7 @@ section p {
   color: white;
   font-size: 1.1em;
 }
+
 /*This makes the section paragraph a background on blue with a rounded border. The height and width are applyed and the paddind and margin is applied to place the paragraph in the right position on the page. The color of the font will be white and the size being 1.1em. The position
 basically is making it easier to place the element without colliding with other elements. (this also allows the cool merging of the section h2 and the actual section).*/
 
@@ -110,6 +154,52 @@ section h2 {
   text-shadow: 2px 2px 8px #55d953;
 }
 /*The section h2 is also rounded but the background is displayed as green. The lettering is white and also is assigned a font style to make the h2 bolder and bigger. The text shadow is assigned to make the h2 pop more from the colored background and also the position absolute is applied to cause the merge of the section and h2 element. */
+
+
+section img.dominic {
+  width: 200px;
+  height: 230px;
+  border: 20px solid rgba(110, 198, 231, 0.59);
+  position: absolute;
+  margin-top: 580px;
+}
+
+section img.annie {
+  width: 200px;
+  height: 230px;
+  border: 20px solid rgba(110, 198, 231, 0.59);
+  position: absolute;
+  margin-top: 830px;
+}
+
+section p.fp1 {
+  height: 100px;
+  background: linear-gradient(to top right, rgb(237, 235, 235), white);
+  border: 20px solid rgba(110, 198, 231, 0.59);
+  border-radius: 20px;
+  width: 40%;
+  color: black;
+  position: absolute;
+  margin-top: 580px;
+  padding-top: 30px;
+  padding-bottom: 160px;
+  margin-left: 200px;
+}
+
+section p.fp2 {
+  height: 100px;
+  background: linear-gradient(to top right, rgb(237, 235, 235), white);
+  border: 20px solid rgba(110, 198, 231, 0.59);
+  border-radius: 20px;
+  width: 40%;
+  color: black;
+  position: absolute;
+  margin-top: 830px;
+  padding-top: 30px;
+  padding-bottom: 160px;
+  margin-left: 200px;
+}
+
 
 /*==============================*/
 

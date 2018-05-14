@@ -101,7 +101,7 @@ article {
 section p {
   border: 20px solid rgba(93, 227, 92, 0.34);
   background: linear-gradient(to top right, rgb(237, 235, 235), white);
-  height: 200px;
+  height: 170px;
   width: 900px;
   margin-left: 95px;
   border-radius: 50px;
@@ -113,4 +113,8 @@ section p {
   text-align: center;
   font-size: 1.3em;
   line-height: 30px;
+}
+
+section.top p {
+  height: 300px;
 }
