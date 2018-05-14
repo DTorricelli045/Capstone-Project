@@ -98,7 +98,41 @@ article {
 
 /*section styles*/
 
-section p {
+section p.p1 {
+  border: 20px solid rgba(93, 227, 92, 0.34);
+  background: linear-gradient(to top right, rgb(237, 235, 235), white);
+  height: 300px;
+  width: 900px;
+  margin-left: 95px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 30px;
+}
+
+section p.p2 {
+  border: 20px solid rgba(93, 227, 92, 0.34);
+  background: linear-gradient(to top right, rgb(237, 235, 235), white);
+  height: 270px;
+  width: 900px;
+  margin-left: 95px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 30px;
+}
+
+section p.p3 {
   border: 20px solid rgba(93, 227, 92, 0.34);
   background: linear-gradient(to top right, rgb(237, 235, 235), white);
   height: 170px;
@@ -113,8 +147,4 @@ section p {
   text-align: center;
   font-size: 1.3em;
   line-height: 30px;
-}
-
-section.top p {
-  height: 300px;
 }
