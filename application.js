@@ -38,3 +38,5 @@ for (var i = 0; i < bttn.length; i++) {
  
   });
 }
+
+window.addEventListener("load", openNav())
