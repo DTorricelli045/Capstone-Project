@@ -56,21 +56,43 @@
       <h3>Available Applications</h3>
 
     <div id="buttons">
-      <button class="appHide active">show app 1<br>
-      <button class="appHide">show app 2<br>
-      <button class="appHide">show app 3</div>
+      <button onclick="openNav(), closeNav2(), closeNav3()" class="appHide active">show app 1<br>
+      <button onclick="openNav2(), closeNav(), closeNav3()" class="appHide">show app 2<br>
+      <button onclick="openNav3(), closeNav(), closeNav2()" class="appHide">show app 3</div>
     </div>
 
     <div class="main">
       <h2>Select an application</h2>
-      <p>Application details go here</p>
-      <p>(They're over There) <br> << </p>
 
-    <div id="applications">
-      <div class="app Active">Success???</div><br>
-      <div class="app">Success2???</div><br>
-      <div class="app">Success3???</div>
+      <!-- sliding applications -->
+<div id="appli" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <p>SUCCESS</p>
     </div>
+  </div>
+
+  <div id="appli2" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+      <div class="overlay-content">
+        <p>SUCCESS 222</p>
+      </div>
+    </div>
+
+    <div id="appli3" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
+        <div class="overlay-content">
+          <p>SUCCESS 333</p>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
 
   </div>
 </div>
