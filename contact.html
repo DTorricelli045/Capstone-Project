@@ -38,8 +38,8 @@
 
 
       <section class="main">
-          <div>
-            <h2>Have Any Questions?</h2>
+          <div class="top">
+            <h2>We would love to hear your feedback and suggestions</h2>
             <h3>Contact Us!</h3>
           </div>
       </section>
@@ -49,16 +49,16 @@
 
     <div class="row">
     <div class="side">
-      <h2>About Me</h2>
-      <h5>Photo of me:</h5>
-      <div class="img" style="height:200px;">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      <h2>Find our store front</h2>
+      <h5>Find us at our Physical Store</h5>
+      <div id="map" style="height:200px;">Image</div>
+      <p>ADDRESS GOES HERE</p>
+      
       <h3>Available Applications</h3>
-
     <div id="buttons">
-      <button onclick="openNav(), closeNav2(), closeNav3()" class="appHide active">show app 1<br>
-      <button onclick="openNav2(), closeNav(), closeNav3()" class="appHide">show app 2<br>
-      <button onclick="openNav3(), closeNav(), closeNav2()" class="appHide">show app 3</div>
+      <button onclick="openNav(), closeNav2(), closeNav3()" class="appHide active">Donations<br>
+      <button onclick="openNav2(), closeNav(), closeNav3()" class="appHide">Job Applications<br>
+      <button onclick="openNav3(), closeNav(), closeNav2()" class="appHide">Ask Us A Question</div>
     </div>
 
     <div class="main">
@@ -66,23 +66,32 @@
 
       <!-- sliding applications -->
 <div id="appli" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="overlay-content">
-      <p></p>
+      <p>Apply for a Donation</p>
     </div>
   </div>
 
   <div id="appli2" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
       <div class="overlay-content">
         <p>Apply for a job</p>
       </div>
     </div>
 
     <div id="appli3" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
         <div class="overlay-content">
-          <p>Apply for a Donation</p>
+          <p>Ask us a Question</p>
+
+          <div class="forms">
+            <!-- USE PROJECT 07-06-1 FOR FORMS AND VALIDATION -->
+              <td><input type="text" name="lname" id="lname" required /></td>
+              <td><input type="text" name="fname" id="fname" required /></td> <br>
+            <td>
+              <textarea id="summary" name="summary" required></textarea>
+           </td>
+          </div>
+          
+
+
         </div>
       </div>
 
@@ -107,6 +116,7 @@
 
  
   <script src="application.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLInaMcqr7KtHMvVhX8kbN2nRHkYn--ZQ&callback=myMap"></script>
 </body>
 
 </html>
