@@ -95,6 +95,16 @@ section ul {
   padding: 20px;
   padding-top: 110px;
   font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  line-height: 27px;
+}
+
+section.package2 ul {
+  margin-top: 10px;
+}
+
+section.package3 ul {
+  margin-top: 10px;
 }
 
 /*===============================*/
@@ -108,30 +118,21 @@ section ul {
 
 .button {
   background-color: rgba(93, 227, 92, 0.64);
-  padding: 20px;
+  padding: 5%;
   font-size: 1.6em;
   color: white;
   text-decoration: none;
   font-family: 'Fjalla One', sans-serif;
   border-radius: 10px;
+  margin-left: 80px;
 }
 
-button.button1 {
-  margin-left: 25%;
-  margin-top: 50px;
-  border: none;
+section.package3 button {
+  margin-top: 15px;
 }
 
-button.button2 {
-  margin-left: 25%;
-  margin-top: 50px;
-  border: none;
-}
-
-button.button3 {
-  margin-left: 25%;
-  margin-top: 50px;
-  border: none;
+section.package2 button {
+  margin-top: 15px;
 }
 
 button:focus {
