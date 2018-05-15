@@ -23,7 +23,6 @@ The border radius makes the border rounded in the desired corners of the border 
 
 aside p {
   float: left;
-  background-color: rgba(93, 227, 92, 0.54);
   border-radius: 15px;
   margin: 15px;
   margin-bottom: 10px;
@@ -35,7 +34,7 @@ aside p {
 
 aside p.answer1 {
   float: left;
-  background-color: rgba(93, 227, 92, 0.54);
+  background-color: rgba(89, 232, 88, 0.79);
   border-radius: 15px;
   margin: 15px;
   margin-bottom: 10px;
@@ -49,7 +48,7 @@ aside p.answer1 {
 
 aside p.answer2 {
   float: left;
-  background-color: rgba(93, 227, 92, 0.54);
+  background-color: rgba(89, 232, 88, 0.79);
   border-radius: 15px;
   margin: 15px;
   margin-bottom: 10px;
@@ -63,7 +62,7 @@ aside p.answer2 {
 
 aside p.answer3 {
   float: left;
-  background-color: rgba(93, 227, 92, 0.54);
+  background-color: rgba(89, 232, 88, 0.79);
   border-radius: 15px;
   margin: 15px;
   margin-bottom: 10px;
