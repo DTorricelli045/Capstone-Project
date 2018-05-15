@@ -74,6 +74,136 @@
   <div id="appli2" class="overlay">
       <div class="overlay-content">
         <p>Apply for a job</p>
+
+        <!-- USE PROJECT 07-06.1***************************************************** -->
+
+        <div id="jobForm">
+          <form action="contact.html" method="post">
+            <fieldset>
+              <label for="firstName">Name</label>
+              <input type="text" name="firstName" placeholder="First Name" id="firstName" class="textInput"required>
+              <input type="text" name="lastName" placeholder="Last Name" id="lastName" class="textInput" required>
+            </fieldset>
+            <br>
+            <fieldset>
+              <label for="email">Email Address</label>
+              <input type="email" name="email" placeholder="johndoe@example.com" id="email" class="textInput" required>
+            </fieldset>
+            <br>
+            <fieldset>
+              <label for="Address">Address</label>
+              <br>
+
+              <fieldset>
+                  <label for="Address">Street</label>
+              <textarea type="Address" name="Address" placeholder="Type your street name here" class="textInput" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <label for="Address">City</label>
+              <textarea type="Address" name="Address" placeholder="Type your city name here" class="textInput" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <label for="Address">State</label>
+              <select name="State">
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AZ">AZ</option>
+                <option value="AR">AR</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DE">DE</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="IA">IA</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="ME">ME</option>
+                <option value="MD">MD</option>
+                <option value="MA">MA</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MS">MS</option>
+                <option value="MO">MO</option>
+                <option value="MT">MT</option>
+                <option value="NE">NE</option>
+                <option value="NV">NV</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NY">NY</option>
+                <option value="NC">NC</option>
+                <option value="ND">ND</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VT">VT</option>
+                <option value="VA">VA</option>
+                <option value="WA">WA</option>
+                <option value="WV">WV</option>
+                <option value="WI">WI</option>
+                <option value="WY">WY</option>
+              </select>
+            </fieldset>
+
+            <fieldset>
+                <label for="Address">Zip-Code</label>
+            <textarea type="text" name="zip" placeholder="Type your zip-code here" class="textInput" required pattern="/^\d{5}(-\d{4})?$/"></textarea>
+          </fieldset>
+
+            </fieldset>
+            <br>
+            <fieldset>
+              <label for="message">Desired Position</label>
+              <br>
+              <textarea name="message" rows="4" cols="40" placeholder="Type your job preference here" class="textInput" required></textarea>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label>Are you legally eligible to work in the U.S?</label>
+            <form action="">
+                <input type="radio" name="legality" value="true" required> Yes<br>
+                <input type="radio" name="legality" value="false"> No<br>
+              </form>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label>Have you ever been convicted of a felony?</label>
+            <form action="">
+                <input type="radio" name="felon" value="true" required> Yes<br>
+                <input type="radio" name="felon" value="false"> No<br>
+              </form>
+              <label>If yes, please explain why</label>
+              <textarea name="message" rows="4" cols="40" class="textInput"></textarea>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label>What education do you have?</label>
+                <input class="textInput" selectBoxOptions="Canada;Denmark;Finland;Germany;Mexico" required>
+                
+            </fieldset>
+            <div id="buttons">
+              <input type="submit" name="submit" value="Submit" id="submit">
+              <input type="reset" name="reset" value="Reset">
+            </div>
+          </form>
+        </div>
+
+
       </div>
     </div>
 
@@ -81,14 +211,31 @@
         <div class="overlay-content">
           <p>Ask us a Question</p>
 
-          <div class="forms">
-            <!-- USE PROJECT 07-06-1 FOR FORMS AND VALIDATION -->
-              <td><input type="text" name="lname" id="lname" required /></td>
-              <td><input type="text" name="fname" id="fname" required /></td> <br>
-            <td>
-              <textarea id="summary" name="summary" required></textarea>
-           </td>
-          </div>
+            <div id="contactForm">
+              <form action="contact.html" method="post">
+                <fieldset>
+                  <label for="firstName">Name</label>
+                  <input type="text" name="firstName" placeholder="First Name" id="firstName" class="textInput"required>
+                  <input type="text" name="lastName" placeholder="Last Name" id="lastName" class="textInput" required>
+                </fieldset>
+                <br>
+                <fieldset>
+                  <label for="email">Email Address</label>
+                  <input type="email" name="email" placeholder="johndoe@example.com" id="email" class="textInput" required>
+                </fieldset>
+                <br>
+                <fieldset>
+                  <label for="message">Message</label>
+                  <br>
+                  <textarea name="message" rows="8" cols="80" placeholder="Type your message here" class="textInput" required></textarea>
+                </fieldset>
+                <br>
+                <div id="buttons">
+                  <input type="submit" name="submit" value="Submit" id="submit">
+                  <input type="reset" name="reset" value="Reset">
+                </div>
+              </form>
+            </div>
           
 
 
