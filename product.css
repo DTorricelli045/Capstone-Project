@@ -107,6 +107,28 @@ section.package3 ul {
   margin-top: 10px;
 }
 
+section img.laptop {
+  width: 13%;
+  height: 18%;
+  position: absolute;
+  margin-left: 95px;
+}
+
+section img.phone {
+  width: 13%;
+  height: 18%;
+  position: absolute;
+  margin-left: 105px;
+  padding-bottom: 10px;
+}
+
+section img.tablet {
+  width: 13%;
+  height: 18%;
+  position: absolute;
+  margin-left: 100px;
+}
+
 /*===============================*/
 
 /*buttons styles*/
@@ -137,4 +159,15 @@ section.package2 button {
 
 button:focus {
   outline: 0;
+}
+
+/*===============================*/
+
+/*mobile styles*/
+
+@media only screen and (max-width: 620px) {
+  section.package2 {
+    flex-flow: wrap-reverse;
+  }
+
 }

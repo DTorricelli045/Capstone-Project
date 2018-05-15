@@ -158,7 +158,7 @@ section h2 {
 
 
 section img.dominic {
-  width: 220px;
+  width: 200px;
   height: 230px;
   border: 20px solid rgba(110, 198, 231, 0.59);
   position: absolute;
@@ -167,7 +167,7 @@ section img.dominic {
 }
 
 section img.annie {
-  width: 220px;
+  width: 205px;
   height: 230px;
   border: 20px solid rgba(110, 198, 231, 0.59);
   position: absolute;
@@ -180,7 +180,7 @@ section p.fp1 {
   background: linear-gradient(to top right, rgb(237, 235, 235), white);
   border: 20px solid rgba(110, 198, 231, 0.59);
   border-radius: 5%;
-  width: 40%;
+  width: 35%;
   color: black;
   position: absolute;
   margin-top: 580px;
@@ -194,7 +194,7 @@ section p.fp2 {
   background: linear-gradient(to top right, rgb(237, 235, 235), white);
   border: 20px solid rgba(110, 198, 231, 0.59);
   border-radius: 5%;
-  width: 40%;
+  width: 35%;
   color: black;
   position: absolute;
   margin-top: 830px;
