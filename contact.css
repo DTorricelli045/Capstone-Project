@@ -41,7 +41,7 @@ AND https://www.w3schools.com/css/css3_flexbox.asp to make an application sheet 
 
 /* buttons */
 .appHide {
-    background-color: green;
+    background-color: rgba(110, 198, 231);
     width: 90%;
     padding: 20px;
     border: none;
@@ -60,13 +60,13 @@ AND https://www.w3schools.com/css/css3_flexbox.asp to make an application sheet 
 
 .appHide:hover {
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
-    background: rgb(60, 187, 39);
+    background: rgba(110, 198, 231, 0.45);
     transition: 0.6s;
 }
 
 .active {
     width: 110%;
-    background: rgb(60, 187, 39);
+    background: rgba(110, 198, 231, 0.45);
 
 }
 
@@ -140,4 +140,17 @@ h3 {
 h2 {
   font-family: 'Fjalla One', sans-serif;
   letter-spacing: 2px;
+}
+
+h2.seleApp {
+  background: linear-gradient(to bottom left, rgba(89, 232, 88), rgb(168, 255, 138));
+}
+
+h2.store {
+  height: 40px;
+}
+
+h3.availApp {
+  padding: 10px;
+  background-color: rgba(108, 218, 107, 0.95);
 }
