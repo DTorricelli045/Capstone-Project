@@ -70,14 +70,7 @@ AND https://www.w3schools.com/css/css3_flexbox.asp to make an application sheet 
 
 }
 
-/* hide/unhide elements */
-.app {
-width: 100%;
-padding: 50px 0;
-text-align: center;
-background-color: lightblue;
-margin-top: 20px;
-}
+
 
 
 
@@ -86,22 +79,19 @@ margin-top: 20px;
 /* Overlay application info */
 
 .overlay {
-    height: 0%;
+    height: 100%;
     width: 100%;
     z-index: 1;
-    top: 0;
-    left: 0;
     background-color: rgba(206, 206, 206, 0.90);
     overflow-y: hidden;
     transition: 0.5s;
+    padding-top: 5%;
 }
 
 .overlay-content {
     position: relative;
-    top: 25%;
     width: 100%;
     text-align: center;
-    margin-top: 30px;
 }
 
 .overlay a {
