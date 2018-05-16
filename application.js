@@ -43,8 +43,8 @@ for (var i = 0; i < bttn.length; i++) {
 // Add google maps
 function myMap() {
   var mapOptions = {
-      center: new google.maps.LatLng(51.5, -0.12),
-      zoom: 10,
+      center: new google.maps.LatLng(33.481580, -112.152224),
+      zoom: 14,
       mapTypeId: google.maps.MapTypeId.HYBRID
   }
   var map = new google.maps.Map(document.getElementById("map"), mapOptions);
