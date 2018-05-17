@@ -44,6 +44,9 @@
             <hr class="hr">
 
             <h2 class="below">We would love to hear your feedback and suggestions</h2>
+
+            <p class="phone"><b class="phoneLabel">Phone:</b> <i>602-222-5432</i></p>
+            <p class="email"><b class="emailLabel">Email:</b> <i>wwwidget@example.com</i></p>
           </div>
       </section>
 
@@ -52,12 +55,11 @@
 
     <div class="row">
     <div class="side">
-      <h2>Find our store front</h2>
-      <h5>Find us at our Physical Store</h5>
+      <h2 class="store">Find our Location</h2>
       <div id="map" style="height:200px;"></div>
-      <p>4326 W Thomas Rd Phoenix, AZ 85031</p>
+      <p class="address">4326 W Thomas Rd Phoenix, AZ 85031</p>
 
-      <h3>Available Applications</h3>
+      <h3 class="availApps">Available Applications</h3>
     <div id="buttons">
       <button onclick="openNav1(), closeNav2(), closeNav3()" class="appHide active">Donations<br>
       <button onclick="openNav2(), closeNav(), closeNav3()" class="appHide">Job Applications<br>
@@ -71,13 +73,13 @@
       <!-- sliding applications -->
 <div id="appli" class="overlay">
     <div class="overlay-content">
-      <p>Apply for a Donation</p>
+      <p class="donate">Apply for a Donation</p>
     </div>
   </div>
 
   <div id="appli2" class="overlay">
       <div class="overlay-content">
-        <p>Apply for a job</p>
+        <p class="job">Apply for a job</p>
 
 
 
@@ -92,7 +94,7 @@
             </div>
 
             <br>
-           
+
             <div class="form">
                 <label for="email">E-mail</label>
                 <input type="email" name="userEmail" id="email" required>
@@ -100,19 +102,19 @@
 
             <br>
 
-            
+
             <div class="form">
                <label for="street">Street Address</label>
                <input type="text" name="userStreet" id="street" required>
             </div>
-           
 
-           
+
+
             <div class="form">
                 <label for="city">City</label>
                 <input type="text" name="userCity" id="city" placeholder="Peoria" required>
             </div>
-           
+
             <div class="form">
                 <label for="state">State</label>
               <select name="userState" required>
@@ -168,17 +170,17 @@
                 <option value="WY">WY</option>
               </select>
             </div>
-           
+
             <br>
-           
+
             <div class="form">
                 <label for="zip">Zip-Code</label>
                 <input type="text" name="userZip" id="zip" placeholder="nnnnn(-nnnn)" pattern="^\d{5}(-\d{4})?$" required>
             </div>
 
-           
+
             <br>
-           
+
 
             <div class="form">
                 <label for="phone">Phone Number</label>
@@ -196,10 +198,10 @@
                   <option value="shipper">Shipment and Packaging</option>
               </select>
             </div>
-        
+
 
             <br>
-          
+
 
             <div class="form">
                 <label for="">Are you legally eligible to work in the U.S?</label>
@@ -211,10 +213,10 @@
                 </fieldset>
               </div>
 
-            
-         
+
+
             <br>
-          
+
             <div class="form">
                 <label for="">Have you ever been convicted of a felony?</label>
                 <fieldset class="optGroup">
@@ -227,11 +229,11 @@
                 <label>If yes, please explain why</label>
               <textarea name="message" rows="4" cols="40" class="textInput"></textarea>
               </div>
-          
+
 
             <br>
-         
-              <div id="form"> 
+
+              <div id="form">
                 <label>What education do you have?</label>
                 <select name="State" required>
                   <option value="HighSchool">High School</option>
@@ -286,7 +288,7 @@
 
     <div id="appli3" class="overlay">
         <div class="overlay-content">
-          <p>Ask us a Question</p>
+          <p class="question">Ask us a Question</p>
 
           <div class="forms">
             <!-- USE PROJECT 07-06-1 FOR FORMS AND VALIDATION -->

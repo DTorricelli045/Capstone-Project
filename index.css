@@ -99,7 +99,7 @@ article {
 /*section styles*/
 
 section p.p1 {
-  border: 20px solid rgba(93, 227, 92, 0.34);
+  border: 20px solid rgba(91, 226, 91, 0.65);
   background: linear-gradient(to top right, rgb(237, 235, 235), white);
   height: 300px;
   width: 900px;
@@ -116,7 +116,7 @@ section p.p1 {
 }
 
 section p.p2 {
-  border: 20px solid rgba(93, 227, 92, 0.34);
+  border: 20px solid rgba(91, 226, 91, 0.65);
   background: linear-gradient(to top right, rgb(237, 235, 235), white);
   height: 190px;
   width: 900px;
@@ -133,7 +133,7 @@ section p.p2 {
 }
 
 section p.p3 {
-  border: 20px solid rgba(93, 227, 92, 0.34);
+  border: 20px solid rgba(91, 226, 91, 0.65);
   background: linear-gradient(to top right, rgb(237, 235, 235), white);
   height: 170px;
   width: 900px;

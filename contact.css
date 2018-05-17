@@ -22,7 +22,7 @@ AND https://www.w3schools.com/css/css3_flexbox.asp to make an application sheet 
 /* Sidebar/left column */
 .side {
     flex: 30%;
-    background-color: #f1f1f1;
+    background-color: rgb(255, 255, 255);
     padding: 20px;
 }
 
@@ -40,21 +40,27 @@ div.top {
 
 /* div styles for top section in webpage */
 .top {
-    height: 200px;
+    height: 350px;
     text-align: center;
+}
+
+div#buttons {
+  background: rgba(122, 219, 255, 0.83);
+  padding: 20px;
 }
 
 /* buttons */
 .appHide {
-    background-color: rgba(110, 198, 231);
-    width: 90%;
+    background-color: rgb(91, 226, 91);
+    width: 50%;
     padding: 20px;
     border: none;
     color: white;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1.3em;
+    letter-spacing: 5px;
     margin: 4px 2px;
     cursor: pointer;
 }
@@ -65,19 +71,14 @@ div.top {
 
 .appHide:hover {
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
-    background: rgba(110, 198, 231, 0.45);
+    background: rgba(128, 249, 128);
     transition: 0.6s;
 }
 
 .active {
-    width: 110%;
-    background: rgba(110, 198, 231, 0.45);
-
+    width: 100%;
+    background: rgba(128, 249, 128);
 }
-
-
-
-
 
 
 
@@ -87,10 +88,15 @@ div.top {
     height: 100%;
     width: 100%;
     z-index: 1;
-    background-color: rgba(206, 206, 206, 0.90);
+    background-color: rgb(91, 226, 91);
     overflow-y: hidden;
     transition: 0.5s;
     padding-top: 5%;
+}
+
+fieldset {
+  background-color: rgb(242, 239, 239);
+  border: none;
 }
 
 .overlay-content {
@@ -143,11 +149,20 @@ h2.seleApp {
 
 h2.store {
   height: 40px;
+  font-size: 1.5em;
+  background: rgba(122, 209, 255, 0.64);
+  padding: 30px;
+  color: white;
+  padding-bottom: 50px;
 }
 
-h3.availApp {
-  padding: 10px;
-  background-color: rgba(108, 218, 107, 0.95);
+h3.availApps {
+  padding: 20px;
+  background-color: rgb(91, 226, 91);
+  color: white;
+  font-size: 1.8em;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px
 }
 
 h3.contactUs {
@@ -169,4 +184,65 @@ hr.hr {
   width: 500px;
   border: 2px solid white;
   background-color: white;
+}
+
+p.donate {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: white;
+  text-decoration: underline;
+}
+
+p.job {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: white;
+  text-decoration: underline;
+}
+
+
+p.question {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: white;
+  text-decoration: underline;
+}
+
+p.address {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  padding: 30px;
+  padding-bottom: 80px;
+  width: 300px;
+  background-color: rgba(122, 209, 255, 0.74);
+  color: white;
+  border-radius: 20px;
+  margin: 30px;
+    margin-left: 370px;
+    font-size: 1.3em;
+    line-height: 30px;
+      letter-spacing: 3px;
+      text-decoration: underline;
+}
+
+p.phone, p.email {
+  padding: 20px;
+  padding-top: 15px;
+  background-color: rgba(122, 209, 255, 0.84);
+  margin-top: 20px;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+}
+
+b.phoneLabel, b.emailLabel {
+  font-family: 'Fjalla One', sans-serif;
+  color: white;
+  letter-spacing: 3px;
+}
+
+i {
+  text-decoration: underline;
 }
