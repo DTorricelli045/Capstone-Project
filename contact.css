@@ -49,13 +49,14 @@ div.top {
 div#buttons {
   background: rgba(122, 209, 255);
   padding: 20px;
+  text-align: center;
 }
 
 /* buttons */
 
 .appHide {
   background-color: rgb(91, 226, 91);
-  width: 50%;
+  width: 75%;
   padding: 20px;
   border: none;
   color: white;
@@ -121,9 +122,67 @@ fieldset {
 
 /* Forms styles */
 
-.forms {
-  padding: 10px 30px;
+.eduLabel {
+  float: left;
 }
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#eduTime {
+  width: 90%;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#submit, #reset {
+  background-color: rgb(91, 226, 91);
+  border: none;
+  width: 45%;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#submit:hover, #reset:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+  background: rgba(128, 249, 128);
+  transition: 0.6s;
+}
+
+
+
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 
