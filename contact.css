@@ -1,36 +1,37 @@
 /* contact.css */
 
-
-
 /* Positioning styles */
 
 /* LOOK UP https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 AND https://www.w3schools.com/css/css3_flexbox.asp to make an application sheet that folds out into a tray */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-
 /* Column container */
+
 .row {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Create two unequal columns that sits next to each other */
+
 /* Sidebar/left column */
+
 .side {
-    flex: 30%;
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
+  flex: 30%;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
 }
 
 /* application tray */
+
 .main {
-    flex: 70%;
-    background-color: white;
-    padding: 20px;
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
 }
 
 div.top {
@@ -39,59 +40,59 @@ div.top {
 }
 
 /* div styles for top section in webpage */
+
 .top {
-    height: 350px;
-    text-align: center;
+  height: 350px;
+  text-align: center;
 }
 
 div#buttons {
-  background: rgba(122, 219, 255, 0.83);
+  background: rgba(122, 209, 255);
   padding: 20px;
 }
 
 /* buttons */
+
 .appHide {
-    background-color: rgb(91, 226, 91);
-    width: 50%;
-    padding: 20px;
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.3em;
-    letter-spacing: 5px;
-    margin: 4px 2px;
-    cursor: pointer;
+  background-color: rgb(91, 226, 91);
+  width: 50%;
+  padding: 20px;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.3em;
+  letter-spacing: 5px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 .appHide:focus {
-    outline: 0;
+  outline: 0;
 }
 
 .appHide:hover {
-    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
-    background: rgba(128, 249, 128);
-    transition: 0.6s;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+  background: rgba(128, 249, 128);
+  transition: 0.6s;
 }
 
 .active {
-    width: 100%;
-    background: rgba(128, 249, 128);
+  width: 100%;
+  background: rgba(128, 249, 128);
 }
-
-
 
 /* Overlay application info */
 
 .overlay {
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    background-color: rgb(91, 226, 91);
-    overflow-y: hidden;
-    transition: 0.5s;
-    padding-top: 5%;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: rgb(91, 226, 91);
+  overflow-y: hidden;
+  transition: 0.5s;
+  padding-top: 5%;
 }
 
 fieldset {
@@ -100,37 +101,36 @@ fieldset {
 }
 
 .overlay-content {
-    position: relative;
-    width: 100%;
-    text-align: center;
+  position: relative;
+  width: 100%;
+  text-align: center;
 }
 
 .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
 .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+  color: #f1f1f1;
 }
-
 
 /* Forms styles */
+
 .forms {
-    padding: 10px 30px;
+  padding: 10px 30px;
 }
 
-
-
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 700px) {
-    .row, .navbar {
-        flex-direction: column;
-    }
+  .row, .navbar {
+    flex-direction: column;
+  }
 }
 
 h3 {
@@ -202,7 +202,6 @@ p.job {
   text-decoration: underline;
 }
 
-
 p.question {
   font-family: 'Fjalla One', sans-serif;
   font-size: 1.8em;
@@ -221,11 +220,11 @@ p.address {
   color: white;
   border-radius: 20px;
   margin: 30px;
-    margin-left: 370px;
-    font-size: 1.3em;
-    line-height: 30px;
-      letter-spacing: 3px;
-      text-decoration: underline;
+  margin-left: 370px;
+  font-size: 1.3em;
+  line-height: 30px;
+  letter-spacing: 3px;
+  text-decoration: underline;
 }
 
 p.phone, p.email {

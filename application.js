@@ -1,29 +1,28 @@
-
 // functions for opening applications
 function openNav1() {
-  document.getElementById("appli").style.display="block";
+  document.getElementById("appli").style.display = "block";
 }
 
 function openNav2() {
-  document.getElementById("appli2").style.display="block";
+  document.getElementById("appli2").style.display = "block";
 }
 
 function openNav3() {
-  document.getElementById("appli3").style.display="block";
+  document.getElementById("appli3").style.display = "block";
 }
 
 
 // functions for closing applications
 function closeNav() {
-  document.getElementById("appli").style.display="none";
+  document.getElementById("appli").style.display = "none";
 }
 
 function closeNav2() {
-  document.getElementById("appli2").style.display="none";
+  document.getElementById("appli2").style.display = "none";
 }
 
 function closeNav3() {
-  document.getElementById("appli3").style.display="none";
+  document.getElementById("appli3").style.display = "none";
 }
 
 //  button styles
@@ -35,7 +34,7 @@ for (var i = 0; i < bttn.length; i++) {
     var current = document.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
- 
+
   });
 }
 
@@ -43,12 +42,12 @@ for (var i = 0; i < bttn.length; i++) {
 // Add google maps
 function myMap() {
   var mapOptions = {
-      center: new google.maps.LatLng(33.481580, -112.152224),
-      zoom: 14,
-      mapTypeId: google.maps.MapTypeId.HYBRID
+    center: new google.maps.LatLng(33.481580, -112.152224),
+    zoom: 14,
+    mapTypeId: google.maps.MapTypeId.HYBRID
   }
   var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-  }
+}
 
 
 
