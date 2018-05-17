@@ -93,7 +93,7 @@ section.package3 {
 section ul {
   width: 250px;
   padding: 20px;
-  padding-top: 110px;
+  padding-top: 130px;
   font-family: 'Quicksand', sans-serif;
   text-align: center;
   line-height: 27px;
@@ -127,39 +127,6 @@ section img.tablet {
   height: 18%;
   position: absolute;
   margin-left: 100px;
-}
-
-/*===============================*/
-
-/*buttons styles*/
-
-.button:hover {
-  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  background-color: rgba(93, 227, 92, 0.84);
-}
-
-.button {
-  background-color: rgba(93, 227, 92);
-  padding: 5%;
-  font-size: 1.6em;
-  color: white;
-  text-decoration: none;
-  font-family: 'Fjalla One', sans-serif;
-  border-radius: 10px;
-  margin-left: 80px;
-}
-
-section.package3 button {
-  margin-top: 15px;
-}
-
-section.package2 button {
-  margin-top: 15px;
-}
-
-button:focus {
-  outline: 0;
 }
 
 /*===============================*/

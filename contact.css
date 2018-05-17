@@ -29,8 +29,13 @@ AND https://www.w3schools.com/css/css3_flexbox.asp to make an application sheet 
 /* application tray */
 .main {
     flex: 70%;
-    background-color: rgb(255, 255, 255);;
+    background-color: white;
     padding: 20px;
+}
+
+div.top {
+  background-color: rgba(93, 227, 92, 0.84);
+  border-radius: 30px;
 }
 
 /* div styles for top section in webpage */
@@ -143,4 +148,25 @@ h2.store {
 h3.availApp {
   padding: 10px;
   background-color: rgba(108, 218, 107, 0.95);
+}
+
+h3.contactUs {
+  color: white;
+  font-size: 4.5em;
+  padding: 50px;
+  padding-bottom: 40px;
+}
+
+h2.below {
+  padding-top: 20px;
+  color: white;
+  font-size: 1.4em;
+  font-family: 'Quicksand', sans-serif;
+}
+
+hr.hr {
+  height: 6px;
+  width: 500px;
+  border: 2px solid white;
+  background-color: white;
 }
