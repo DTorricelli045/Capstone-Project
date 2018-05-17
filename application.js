@@ -51,13 +51,6 @@ function myMap() {
   }
 
 
-// adds verification to pages
-function verify() {
-  document.forms[0].onsubmit = function() {
-     if (this.checkValidity()) alert("Thanks for applying! we'll get back to you as soon as possible.");
-     return false;
-  }
-}
 
 
 
@@ -65,4 +58,3 @@ function verify() {
 window.addEventListener("load", openNav1())
 window.addEventListener("load", closeNav2())
 window.addEventListener("load", closeNav3())
-window.onload = verify;

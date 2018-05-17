@@ -67,15 +67,168 @@
     </div>
 
 
-    <!-- **********USE EXERCISE 05-07************ -->
-
 
       <!-- sliding applications -->
 <div id="appli" class="overlay">
     <div class="overlay-content">
-      <p class="donate">Apply for a Donation</p>
+      <p>Apply for a Donation</p>
+
+
+      <div id="donateForm">
+          <form id="donApply" action="donate.html" method="post">
+
+            <fieldset>
+
+            <div id="form">
+              <label for="Name">Name</label>
+              <input type="text" name="userName" placeholder="Full Name" id="name" required>
+            </div>
+ 
+           <br>
+           
+            <div class="form">
+                <label for="email">E-mail</label>
+                <input type="email" name="userEmail" id="email" required>
+            </div>
+
+            <br> 
+
+            
+            <div class="form">
+               <label for="street">Street Address</label>
+               <input type="text" name="userStreet" id="street" required>
+            </div>
+        
+
+           
+            <div class="form">
+                <label for="city">City</label>
+                <input type="text" name="userCity" id="city" placeholder="Peoria" required>
+            </div>
+           
+            <div class="form">
+                <label for="state">State</label>
+              <select name="userState">
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AZ">AZ</option>
+                <option value="AR">AR</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DE">DE</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="IA">IA</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="ME">ME</option>
+                <option value="MD">MD</option>
+                <option value="MA">MA</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MS">MS</option>
+                <option value="MO">MO</option>
+                <option value="MT">MT</option>
+                <option value="NE">NE</option>
+                <option value="NV">NV</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NY">NY</option>
+                <option value="NC">NC</option>
+                <option value="ND">ND</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VT">VT</option>
+                <option value="VA">VA</option>
+                <option value="WA">WA</option>
+                <option value="WV">WV</option>
+                <option value="WI">WI</option>
+                <option value="WY">WY</option>
+              </select>
+            </div>
+           
+            <br>
+           
+             <div class="form">
+                <label for="zip">Zip-Code</label>
+                <input type="text" name="userZip" id="zip" placeholder="nnnnn(-nnnn)" pattern="^\d{5}(-\d{4})?$" required>
+            </div> 
+
+           
+            <br>
+           
+
+             <div class="form">
+                <label for="phone">Phone Number</label>
+                <input type="text" name="userPhone" id="phone" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\s*)?\d{3}[\s-]?\d{4}$" required>
+            </div> 
+
+
+            <br>
+
+            <div class="form">
+              <label for="donate">What are You Donating?</label>
+              <select name="donate">
+                  <option value="computer">Computers & Parts</option>
+                  <option value="phone">Phones</option>
+                  <option value="tablet">Tablets</option>
+                  <option value="other">Other Electronics</option>
+                  <option value="multiple">Multiple Types</option>
+              </select>
+            </div>
+          
+
+
+            </fieldset>
+
+
+            <div id="buttons">
+              <input type="submit" name="submit" value="Submit" id="submit">
+              <input type="reset" name="reset" value="Reset">
+            </div>
+          </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
   </div>
+
 
   <div id="appli2" class="overlay">
       <div class="overlay-content">
@@ -84,29 +237,30 @@
 
 
         <div id="jobForm">
-          <form id="jobApply" action="http://www.example.com" method="post">
+          <form id="jobApply" action="valid.html" method="post">
 
-            <fieldset >
+            <fieldset>
 
             <div id="form">
               <label for="Name">Name</label>
-              <input type="text" name="userName" placeholder="Full Name" id="name" class="textInput" required>
+              <input type="text" name="userName" placeholder="Full Name" id="name" required>
             </div>
-
-            <br>
-
+ 
+           <br>
+           
             <div class="form">
                 <label for="email">E-mail</label>
                 <input type="email" name="userEmail" id="email" required>
             </div>
 
-            <br>
+            <br> 
 
 
             <div class="form">
                <label for="street">Street Address</label>
                <input type="text" name="userStreet" id="street" required>
             </div>
+        
 
 
 
@@ -117,7 +271,7 @@
 
             <div class="form">
                 <label for="state">State</label>
-              <select name="userState" required>
+              <select name="userState">
                 <option value="AL">AL</option>
                 <option value="AK">AK</option>
                 <option value="AZ">AZ</option>
@@ -172,27 +326,26 @@
             </div>
 
             <br>
-
-            <div class="form">
+           
+             <div class="form">
                 <label for="zip">Zip-Code</label>
                 <input type="text" name="userZip" id="zip" placeholder="nnnnn(-nnnn)" pattern="^\d{5}(-\d{4})?$" required>
-            </div>
+            </div> 
 
 
             <br>
 
-
-            <div class="form">
+             <div class="form">
                 <label for="phone">Phone Number</label>
                 <input type="text" name="userPhone" id="phone" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\s*)?\d{3}[\s-]?\d{4}$" required>
-            </div>
+            </div> 
 
 
             <br>
 
             <div class="form">
               <label for="message">Desired Position</label>
-              <select name="userState" required>
+              <select name="userState">
                   <option value="salvager">Salvager</option>
                   <option value="clerk">Store Front Cashier</option>
                   <option value="shipper">Shipment and Packaging</option>
@@ -213,8 +366,8 @@
                 </fieldset>
               </div>
 
-
-
+            
+           
             <br>
 
             <div class="form">
@@ -227,7 +380,7 @@
                 </fieldset>
 
                 <label>If yes, please explain why</label>
-              <textarea name="message" rows="4" cols="40" class="textInput"></textarea>
+              <textarea name="felonExp" rows="4" cols="40" class="textInput"></textarea>
               </div>
 
 
@@ -240,6 +393,7 @@
                   <option value="College">College</option>
                   <option value="Other">Other</option>
                 </select>
+                </div>
 
                 <label for="eduName">What is the name of the institute?<label>
                 <input type="text" name="eduName" placeholder="Name of Institute" id="eduName" class="textInput" required>
@@ -259,18 +413,17 @@
               <div id="form">
                 <label>Did you graduate?</label>
                 <fieldset>
-                <form action="">
+              
                   <input type="radio" name="edu" value="true" required> Yes<br>
                   <input type="radio" name="edu" value="false"> No<br>
-                </form>
+                
               </fieldset>
               </div>
 
               <div id="form">
                 <label for="eduType">What degree did you apply for?<label>
                   <input type="text" name="eduType" placeholder="Name of Degree" id="eduType" class="textInput" required>
-               </div>
-            </div>
+               </div> 
 
             </fieldset>
 
@@ -286,31 +439,74 @@
       </div>
     </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div id="appli3" class="overlay">
         <div class="overlay-content">
           <p class="question">Ask us a Question</p>
 
-          <div class="forms">
-            <!-- USE PROJECT 07-06-1 FOR FORMS AND VALIDATION -->
-              <td><input type="text" name="lname" id="lname" required /></td>
-              <td><input type="text" name="fname" id="fname" required /></td> <br>
-            <td>
-              <textarea id="summary" name="summary" required></textarea>
-           </td>
-          </div>
 
+          <div id="questionForm">
+              <form id="questApply" action="question.html" method="post">
+    
+                <fieldset>
+    
+                <div id="form">
+                  <label for="Name">Name</label>
+                  <input type="text" name="userName" placeholder="Full Name" id="name" required>
+                </div>
+     
+               <br>
+               
+                <div class="form">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="userEmail" id="email" required>
+                </div>
+    
+                <br> 
 
+                <div id="form">
+                    <label for="response">What would you like to Know?<label>
+                      <br>
+                        <textarea name="response" rows="6" cols="60" class="textInput" required></textarea>
+                   </div> 
 
+                </fieldset>
+    
+                <div id="buttons">
+                  <input type="submit" name="submit" value="Submit" id="submit">
+                  <input type="reset" name="reset" value="Reset">
+                </div>
+              </form>
+            </div>
+
+          
 
         </div>
       </div>
 
 
 
-
   </div>
 </div>
    </section>
+
+
 
 
 
