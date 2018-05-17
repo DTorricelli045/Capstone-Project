@@ -52,8 +52,9 @@
 
     <div class="row">
     <div class="side">
-      <h2 class="store">Find our store front</h2>
-      <div id="map" style="height:200px;">Image</div>
+      <h2>Find our store front</h2>
+      <h5>Find us at our Physical Store</h5>
+      <div id="map" style="height:200px;"></div>
       <p>4326 W Thomas Rd Phoenix, AZ 85031</p>
 
       <h3>Available Applications</h3>
@@ -81,35 +82,40 @@
 
 
         <div id="jobForm">
-          <form action="contact.html" method="post">
-            <fieldset>
-              <label for="firstName">Name</label>
-              <input type="text" name="firstName" placeholder="First Name" id="firstName" class="textInput"required>
-              <input type="text" name="lastName" placeholder="Last Name" id="lastName" class="textInput" required>
-            </fieldset>
+          <form id="jobApply" action="http://www.example.com" method="post">
+
+            <fieldset >
+
+            <div id="form">
+              <label for="Name">Name</label>
+              <input type="text" name="userName" placeholder="Full Name" id="name" class="textInput" required>
+            </div>
+
             <br>
-            <fieldset>
-              <label for="email">Email Address</label>
-              <input type="email" name="email" placeholder="johndoe@example.com" id="email" class="textInput" required>
-            </fieldset>
+           
+            <div class="form">
+                <label for="email">E-mail</label>
+                <input type="email" name="userEmail" id="email" required>
+            </div>
+
             <br>
-            <fieldset>
-              <label for="Address">Address</label>
-              <br>
 
-              <fieldset>
-                  <label for="Address">Street</label>
-              <textarea type="Address" name="Address" placeholder="Type your street name here" class="textInput" required></textarea>
-            </fieldset>
+            
+            <div class="form">
+               <label for="street">Street Address</label>
+               <input type="text" name="userStreet" id="street" required>
+            </div>
+           
 
-            <fieldset>
-                <label for="Address">City</label>
-              <textarea type="Address" name="Address" placeholder="Type your city name here" class="textInput" required></textarea>
-            </fieldset>
-
-            <fieldset>
-                <label for="Address">State</label>
-              <select name="State">
+           
+            <div class="form">
+                <label for="city">City</label>
+                <input type="text" name="userCity" id="city" placeholder="Peoria" required>
+            </div>
+           
+            <div class="form">
+                <label for="state">State</label>
+              <select name="userState" required>
                 <option value="AL">AL</option>
                 <option value="AK">AK</option>
                 <option value="AZ">AZ</option>
@@ -161,49 +167,108 @@
                 <option value="WI">WI</option>
                 <option value="WY">WY</option>
               </select>
-            </fieldset>
-
-            <fieldset>
-                <label for="Address">Zip-Code</label>
-            <textarea type="text" name="zip" placeholder="Type your zip-code here" class="textInput" required pattern="/^\d{5}(-\d{4})?$/"></textarea>
-          </fieldset>
-
-            </fieldset>
+            </div>
+           
             <br>
-            <fieldset>
+           
+            <div class="form">
+                <label for="zip">Zip-Code</label>
+                <input type="text" name="userZip" id="zip" placeholder="nnnnn(-nnnn)" pattern="^\d{5}(-\d{4})?$" required>
+            </div>
+
+           
+            <br>
+           
+
+            <div class="form">
+                <label for="phone">Phone Number</label>
+                <input type="text" name="userPhone" id="phone" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\s*)?\d{3}[\s-]?\d{4}$" required>
+            </div>
+
+
+            <br>
+
+            <div class="form">
               <label for="message">Desired Position</label>
-              <br>
-              <textarea name="message" rows="4" cols="40" placeholder="Type your job preference here" class="textInput" required></textarea>
-            </fieldset>
-            <br>
-            <fieldset>
-                <label>Are you legally eligible to work in the U.S?</label>
-                <br>
-            <form action="">
-                <input type="radio" name="legality" value="true" required> Yes<br>
-                <input type="radio" name="legality" value="false"> No<br>
-              </form>
-            </fieldset>
-            <br>
-            <fieldset>
-                <label>Have you ever been convicted of a felony?</label>
-                <br>
-            <form action="">
-                <input type="radio" name="felon" value="true" required> Yes<br>
-                <input type="radio" name="felon" value="false"> No<br>
-              </form>
-              <label>If yes, please explain why</label>
-              <textarea name="message" rows="4" cols="40" class="textInput"></textarea>
-            </fieldset>
+              <select name="userState" required>
+                  <option value="salvager">Salvager</option>
+                  <option value="clerk">Store Front Cashier</option>
+                  <option value="shipper">Shipment and Packaging</option>
+              </select>
+            </div>
+        
 
             <br>
-            <fieldset>
+          
+
+            <div class="form">
+                <label for="">Are you legally eligible to work in the U.S?</label>
+                <fieldset class="optGroup">
+                  <label for="true">Yes</label>
+                  <input type="radio" name="legality" id="true" value="yes" required>
+                  <label for="false">No</label>
+                  <input type="radio" name="legality" id="false" value="no">
+                </fieldset>
+              </div>
+
+            
+         
+            <br>
+          
+            <div class="form">
+                <label for="">Have you ever been convicted of a felony?</label>
+                <fieldset class="optGroup">
+                  <label for="true">Yes</label>
+                  <input type="radio" name="felon" id="true" value="yes" required>
+                  <label for="false">No</label>
+                  <input type="radio" name="felon" id="false" value="no">
+                </fieldset>
+
+                <label>If yes, please explain why</label>
+              <textarea name="message" rows="4" cols="40" class="textInput"></textarea>
+              </div>
+          
+
+            <br>
+         
+              <div id="form"> 
                 <label>What education do you have?</label>
-                <select name="State">
+                <select name="State" required>
                   <option value="HighSchool">High School</option>
                   <option value="College">College</option>
                   <option value="Other">Other</option>
                 </select>
+
+                <label for="eduName">What is the name of the institute?<label>
+                <input type="text" name="eduName" placeholder="Name of Institute" id="eduName" class="textInput" required>
+
+
+                <label for="eduLocal">Where is it Located?</label>
+                <input type="text" name="eduLocal" placeholder="Full Address of Institute" id="eduLocal" class="textInput" required>
+
+                <label for="eduTime">Time of Attendance</label>
+              <fieldset>
+                <label>From</label>
+                <input type="text" name="eduTimeBegin" placeholder="XXXX" id="eduTimeBegin" class="textInput" required>
+                <label>To</label>
+                <input type="text" name="eduTimeEnd" placeholder="XXXX" id="eduTimeEnd" class="textInput" required>
+              </fieldset>
+
+              <div id="form">
+                <label>Did you graduate?</label>
+                <fieldset>
+                <form action="">
+                  <input type="radio" name="edu" value="true" required> Yes<br>
+                  <input type="radio" name="edu" value="false"> No<br>
+                </form>
+              </fieldset>
+              </div>
+
+              <div id="form">
+                <label for="eduType">What degree did you apply for?<label>
+                  <input type="text" name="eduType" placeholder="Name of Degree" id="eduType" class="textInput" required>
+               </div>
+            </div>
 
             </fieldset>
 
