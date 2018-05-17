@@ -15,7 +15,7 @@ h2 {
 
 h2.pk1 {
   text-align: center;
-  background-color: rgba(93, 227, 92, 0.64);
+  background-color: rgba(93, 227, 92, 0.84);
   border-radius: 100%;
   height: 200px;
   width: 200px;
@@ -30,7 +30,7 @@ h2.pk1 {
 
 h2.pk2 {
   text-align: center;
-  background-color: rgba(93, 227, 92, 0.64);
+  background-color: rgba(93, 227, 92, 0.84);
   border-radius: 100%;
   height: 200px;
   width: 200px;
@@ -45,7 +45,7 @@ h2.pk2 {
 
 h2.pk3 {
   text-align: center;
-  background-color: rgba(93, 227, 92, 0.64);
+  background-color: rgba(93, 227, 92, 0.84);
   border-radius: 100%;
   height: 200px;
   width: 200px;
@@ -136,10 +136,11 @@ section img.tablet {
 .button:hover {
   box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
+  background-color: rgba(93, 227, 92, 0.84);
 }
 
 .button {
-  background-color: rgba(93, 227, 92, 0.64);
+  background-color: rgba(93, 227, 92);
   padding: 5%;
   font-size: 1.6em;
   color: white;

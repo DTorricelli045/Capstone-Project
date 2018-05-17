@@ -127,7 +127,7 @@ section p {
   width: 470px;
   position: absolute;
   margin-left: 280px;
-  margin-top: 100px;
+  margin-top: 70px;
   color: black;
   font-size: 1.1em;
   padding-left: 50px;
@@ -146,8 +146,8 @@ section h2 {
   text-align: center;
   border-radius: 100%;
   background-color: rgba(93, 227, 92, 0.64);
-  margin-top: 50px;
-  margin-left: 50px;
+  margin-top: 30px;
+  margin-left: 40px;
   width: 300px;
   position: absolute;
   line-height: 40px;
@@ -187,6 +187,7 @@ section p.fp1 {
   padding-top: 30px;
   padding-bottom: 160px;
   margin-left: 250px;
+  line-height: 30px;
 }
 
 section p.fp2 {
@@ -201,6 +202,7 @@ section p.fp2 {
   padding-top: 30px;
   padding-bottom: 160px;
   margin-left: 250px;
+  line-height: 30px;
 }
 
 section h2.dh2 {
