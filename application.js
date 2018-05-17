@@ -1,29 +1,29 @@
 
 // functions for opening applications
-function openNav() {
-  document.getElementById("appli").style.height = "100%";
+function openNav1() {
+  document.getElementById("appli").style.display="block";
 }
 
 function openNav2() {
-  document.getElementById("appli2").style.height = "100%";
+  document.getElementById("appli2").style.display="block";
 }
 
 function openNav3() {
-  document.getElementById("appli3").style.height = "100%";
+  document.getElementById("appli3").style.display="block";
 }
 
 
 // functions for closing applications
 function closeNav() {
-  document.getElementById("appli").style.height = "0%";
+  document.getElementById("appli").style.display="none";
 }
 
 function closeNav2() {
-  document.getElementById("appli2").style.height = "0%";
+  document.getElementById("appli2").style.display="none";
 }
 
 function closeNav3() {
-  document.getElementById("appli3").style.height = "0%";
+  document.getElementById("appli3").style.display="none";
 }
 
 //  button styles
@@ -52,4 +52,6 @@ function myMap() {
 
 
 // Run on load
-window.addEventListener("load", openNav())
+window.addEventListener("load", openNav1())
+window.addEventListener("load", closeNav2())
+window.addEventListener("load", closeNav3())

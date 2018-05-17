@@ -55,13 +55,15 @@
       
       <h3>Available Applications</h3>
     <div id="buttons">
-      <button onclick="openNav(), closeNav2(), closeNav3()" class="appHide active">Donations<br>
+      <button onclick="openNav1(), closeNav2(), closeNav3()" class="appHide active">Donations<br>
       <button onclick="openNav2(), closeNav(), closeNav3()" class="appHide">Job Applications<br>
       <button onclick="openNav3(), closeNav(), closeNav2()" class="appHide">Ask Us A Question</div>
     </div>
 
 
-    <div class="main">
+    <!-- **********USE EXERCISE 05-07************ -->
+
+
       <!-- sliding applications -->
 <div id="appli" class="overlay">
     <div class="overlay-content">
@@ -173,6 +175,7 @@
             <br>
             <fieldset>
                 <label>Are you legally eligible to work in the U.S?</label>
+                <br>
             <form action="">
                 <input type="radio" name="legality" value="true" required> Yes<br>
                 <input type="radio" name="legality" value="false"> No<br>
@@ -181,6 +184,7 @@
             <br>
             <fieldset>
                 <label>Have you ever been convicted of a felony?</label>
+                <br>
             <form action="">
                 <input type="radio" name="felon" value="true" required> Yes<br>
                 <input type="radio" name="felon" value="false"> No<br>
@@ -188,12 +192,19 @@
               <label>If yes, please explain why</label>
               <textarea name="message" rows="4" cols="40" class="textInput"></textarea>
             </fieldset>
+
             <br>
             <fieldset>
                 <label>What education do you have?</label>
-                <input class="textInput" selectBoxOptions="Canada;Denmark;Finland;Germany;Mexico" required>
+                <select name="State">
+                  <option value="HighSchool">High School</option>
+                  <option value="College">College</option>
+                  <option value="Other">Other</option>
+                </select>
                 
             </fieldset>
+
+
             <div id="buttons">
               <input type="submit" name="submit" value="Submit" id="submit">
               <input type="reset" name="reset" value="Reset">
@@ -209,31 +220,14 @@
         <div class="overlay-content">
           <p>Ask us a Question</p>
 
-            <div id="contactForm">
-              <form action="contact.html" method="post">
-                <fieldset>
-                  <label for="firstName">Name</label>
-                  <input type="text" name="firstName" placeholder="First Name" id="firstName" class="textInput"required>
-                  <input type="text" name="lastName" placeholder="Last Name" id="lastName" class="textInput" required>
-                </fieldset>
-                <br>
-                <fieldset>
-                  <label for="email">Email Address</label>
-                  <input type="email" name="email" placeholder="johndoe@example.com" id="email" class="textInput" required>
-                </fieldset>
-                <br>
-                <fieldset>
-                  <label for="message">Message</label>
-                  <br>
-                  <textarea name="message" rows="8" cols="80" placeholder="Type your message here" class="textInput" required></textarea>
-                </fieldset>
-                <br>
-                <div id="buttons">
-                  <input type="submit" name="submit" value="Submit" id="submit">
-                  <input type="reset" name="reset" value="Reset">
-                </div>
-              </form>
-            </div>
+          <div class="forms">
+            <!-- USE PROJECT 07-06-1 FOR FORMS AND VALIDATION -->
+              <td><input type="text" name="lname" id="lname" required /></td>
+              <td><input type="text" name="fname" id="fname" required /></td> <br>
+            <td>
+              <textarea id="summary" name="summary" required></textarea>
+           </td>
+          </div>
           
 
 
