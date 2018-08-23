@@ -4,7 +4,7 @@
 
 "use strict";
 
-//global variable
+//global variable 
  var formValidity = true;
 
 // function take away default submit
@@ -45,6 +45,9 @@ function removeSelectDefaults() {
              donErr.style.display = "";
          }
          
+         
+         
+         
           // validate select list field
         currentElement = document.querySelectorAll("#donApply select");
         if (currentElement.selectedIndex === -1) {
@@ -73,16 +76,16 @@ function removeSelectDefaults() {
 
      validateDonate();
      validateQuestion()
+     removeSelectDefaults()
 
      // results of validation tests
-     if (formValidity === true) {
+     if (formValidity === false) {
+         document.getElementById("donateError").innerHTML = "Please fix the indicated problems.";
+         document.getElementById("donateError").style.display = "block";
+     } else {
          document.getElementById("donateError").innerHTML = "";
          document.getElementById("donateError").style.display = "none";
          document.getElementsByTagName("form")[0].submit();
-     } else {
-         document.getElementById("donateError").innerHTML = "Please fix the indicated problems.";
-         document.getElementById("donateError").style.display = "block";
-         scroll(0, 0);
      }
  }
 
@@ -141,7 +144,7 @@ function validateQuestion() {
          if (fieldsetValidity === false) {
              throw "Please complete all question info."
          } else {
-             queErr.innerHTML = "none";
+             queErr.innerHTML = "";
              queErr.style.display = "";
          }
          // if the textarea is empty then change the background color and indicate that it is not completed.
