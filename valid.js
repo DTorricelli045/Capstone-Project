@@ -4,8 +4,10 @@
 
 "use strict";
 
+//global variable
  var formValidity = true;
 
+// function take away default submit
 function removeSelectDefaults() {
     var emptyBoxes = document.querySelectorAll("#donApply select");
     for (var i = 0; i < emptyBoxes.length; i++) {
@@ -35,7 +37,7 @@ function removeSelectDefaults() {
                  currentElement.style.background = "white";
              }
          }
-
+         // if the validitiy is not correct then throw this error
          if (fieldsetValidity === false) {
              throw "Please complete all donation info."
          } else {
@@ -58,51 +60,7 @@ function removeSelectDefaults() {
         formValidity = false;
      }
  }
-
-// function to validate required fields
- function validateQuestion() {
-     // support variables for validation
-     var inputElements = document.querySelectorAll("#questApply input");
-     var queErr = document.getElementById("questError");
-     var fieldsetValidity = true;
-     var elementCount = inputElements.length;
-     var textBox = document.getElementsByTagName("textarea");
-     var currentElement;
-
-     // try catch to handle a loop through the fields
-     try {
-         // loop through input fields looking for blanks
-         for (var i = 0; i < elementCount; i++) {
-             currentElement = inputElements[i];
-             //blanks
-             if (currentElement.value === "") {
-                 currentElement.style.background = "rgb(255,233,233)";
-                 fieldsetValidity = false;
-             } else {
-                 currentElement.style.background = "white";
-             }
-         }
-
-         if (fieldsetValidity === false) {
-             throw "Please complete all question info."
-         } else {
-             queErr.innerHTML = "none";
-             queErr.style.display = "";
-         }
-         if (textBox.value === "") {
-             currentElement.style.background = "rgb(255,233,233)";
-                 fieldsetValidity = false;
-         } else {
-              currentElement.style.background = "white";
-         }
-     } catch (msg) {
-         queErr.style.display = "block";
-        queErr.innerHTML = msg;
-        formValidity = false;
-     }
- }
-
-
+ 
 
  // function to validate form on submit event
  function validateForm(evt) {
@@ -150,10 +108,54 @@ function removeSelectDefaults() {
 
 
 
-
-
 //form 2 jobApply
 
 
 
 //form 3 questApply
+
+function validateQuestion() {
+     // support variables for validation
+     var inputElements = document.querySelectorAll("#questApply input");
+     var queErr = document.getElementById("questError");
+     var fieldsetValidity = true;
+     var elementCount = inputElements.length;
+     var textBox = document.getElementsByTagName("textarea");
+     var currentElement;
+
+     // try catch to handle a loop through the fields
+     try {
+         // loop through input fields looking for blanks
+         for (var i = 0; i < elementCount; i++) {
+             currentElement = inputElements[i];
+             //blanks
+             if (currentElement.value === "") {
+                 currentElement.style.background = "rgb(255,233,233)";
+                 fieldsetValidity = false;
+                 // no blanks
+             } else {
+                 currentElement.style.background = "white";
+             }
+         }
+         // if the validitiy is not correct then throw this error
+         if (fieldsetValidity === false) {
+             throw "Please complete all question info."
+         } else {
+             queErr.innerHTML = "none";
+             queErr.style.display = "";
+         }
+         // if the textarea is empty then change the background color and indicate that it is not completed.
+         if (textBox.value === "") {
+             currentElement.style.background = "rgb(255,233,233)";
+                 fieldsetValidity = false;
+         } else {
+              currentElement.style.background = "white";
+         }
+     } catch (msg) {
+         queErr.style.display = "block";
+        queErr.innerHTML = msg;
+        formValidity = false;
+     }
+ }
+
+

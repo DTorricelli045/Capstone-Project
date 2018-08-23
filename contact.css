@@ -164,14 +164,14 @@ textarea {
 #submit, #reset {
   background-color: rgb(91, 226, 91);
   border: none;
-  width: 45%;
+  width: 35%;
   color: white;
-  padding: 15px 32px;
+  padding: 25px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 20px;
+  margin: 10px 2px;
   cursor: pointer;
 }
 
